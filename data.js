@@ -3,7 +3,7 @@ const messages = [
     date: '2020-08-17T00:00:00.000Z',
     image: 'placeholder.png',
     text:
-      'Erster Eintrag. Regina wird diese Message nicht sehen. Sie erhält Zugriff ab dem 28. Mai. Möge die Reis beginnen.',
+      'Erster Eintrag. Regina wird diese Message nicht sehen. Sie erhält Zugriff ab dem 28. Mai. Möge die Reise beginnen.',
   },
   {
     date: '2020-08-24T00:00:00.000Z',
