@@ -1,8 +1,9 @@
 const messages = [
   {
-    date: '2020-08-11T22:21:38.140Z',
+    date: '2020-08-17T00:00:00.000Z',
     image: 'placeholder.png',
-    text: 'Hello World1',
+    text:
+      'Erster Eintrag. Regina wird diese Message nicht sehen. Sie erhält Zugriff ab dem 28. Mai. Möge die Reis beginnen.',
   },
   {
     date: '2020-08-24T00:00:00.000Z',
