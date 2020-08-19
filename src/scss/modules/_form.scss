@@ -72,6 +72,10 @@ $types: text password date datetime datetime-local month week email number
       &:after {
         background-color: $red;
       }
+
+      label {
+        color: $red;
+      }
     }
 
     input {
@@ -107,12 +111,13 @@ $types: text password date datetime datetime-local month week email number
       top: 1.5rem;
       left: 0;
 
-      font-size: 14px;
+      font-size: 16px;
       color: $grey;
 
       pointer-events: none;
 
-      transition: top 0.2s ease, font-size 0.2s ease, line-height 0.2s ease;
+      transition: top 0.2s ease, font-size 0.2s ease, line-height 0.2s ease,
+        color 0.2s ease;
     }
   }
 

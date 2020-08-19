@@ -8,8 +8,7 @@ const messages = [
   {
     date: '2020-08-24T00:00:00.000Z',
     image: 'zweijahre.jpg',
-    text:
-      'Zwei ganze Jahre sind es nun. Lass’ uns das heute feiern und uns auf viele weitere freuen!',
+    text: 'Zwei ganze Jahre sind es nun. Lass’ uns das heute feiern und uns auf viele weitere freuen!',
   },
   {
     date: '2020-08-31T00:00:00.000Z',
@@ -56,8 +55,7 @@ const messages = [
   {
     date: '2020-10-26T01:00:00.000Z',
     image: 'corona.jpg',
-    text:
-      'Wenn das Leben einem Corona gibt, machen wir einfach Video-Chats draus!',
+    text: 'Wenn das Leben einem Corona gibt, machen wir einfach Video-Chats draus!',
   },
   {
     date: '2020-11-02T01:00:00.000Z',
@@ -93,8 +91,7 @@ const messages = [
   {
     date: '2020-12-14T01:00:00.000Z',
     image: 'einzug.jpg',
-    text:
-      'Ompteda ist diese Woche seit einem Jahr unser erstes gemeinsames zuhause. Happy Birthday Ompteda!',
+    text: 'Ompteda ist diese Woche seit einem Jahr unser erstes gemeinsames zuhause. Happy Birthday Ompteda!',
   },
   {
     date: '2020-12-21T01:00:00.000Z',
@@ -130,14 +127,12 @@ const messages = [
   {
     date: '2021-02-01T01:00:00.000Z',
     image: 'eisbaer.jpg',
-    text:
-      'Los, los! Wir haben keine Zeit zu verlieren. Wir haben noch Eisbären zu retten!',
+    text: 'Los, los! Wir haben keine Zeit zu verlieren. Wir haben noch Eisbären zu retten!',
   },
   {
     date: '2021-02-08T01:00:00.000Z',
     image: 'valentinstag.jpg',
-    text:
-      'Diese Woche ist Valentinstag, Bebi. Ich hoffe wir haben uns bis dahin etwas cooles vorgenommen. Immer Du!',
+    text: 'Diese Woche ist Valentinstag, Bebi. Ich hoffe wir haben uns bis dahin etwas cooles vorgenommen. Immer Du!',
   },
   {
     date: '2021-02-15T01:00:00.000Z',
@@ -152,32 +147,27 @@ const messages = [
   {
     date: '2021-03-01T01:00:00.000Z',
     image: 'birthday.jpg',
-    text:
-      'HAPPY BIRTHDAY, MEIN ENGEL! GENAU HEUTE BIST DU EIN JAHRE ÄLTER GEWORDEN!',
+    text: 'HAPPY BIRTHDAY, MEIN ENGEL! GENAU HEUTE BIST DU EIN JAHRE ÄLTER GEWORDEN!',
   },
   {
     date: '2021-03-08T01:00:00.000Z',
     image: 'weltfrauentag.jpg',
-    text:
-      'Heute ist Weltfrauentag. Feiern wir das mit der stärksten Frau, die ich kenne!',
+    text: 'Heute ist Weltfrauentag. Feiern wir das mit der stärksten Frau, die ich kenne!',
   },
   {
     date: '2021-03-15T01:00:00.000Z',
     image: 'beine.jpg',
-    text:
-      'Dass diese Welt nicht zusammenfällt, liegt nur allein an deinen Beinen.',
+    text: 'Dass diese Welt nicht zusammenfällt, liegt nur allein an deinen Beinen.',
   },
   {
     date: '2021-03-22T01:00:00.000Z',
     image: 'dork.jpg',
-    text:
-      'So würde ich immer aussehen, wenn Du mich nicht davon abhalten würdest. Liebe <3',
+    text: 'So würde ich immer aussehen, wenn Du mich nicht davon abhalten würdest. Liebe <3',
   },
   {
     date: '2021-03-29T00:00:00.000Z',
     image: 'easter.jpg',
-    text:
-      'Happy Easter, Bebi! Ist man mittlerweile zu alt zum Eier suchen oder machen wir das dieses Jahr noch?',
+    text: 'Happy Easter, Bebi! Ist man mittlerweile zu alt zum Eier suchen oder machen wir das dieses Jahr noch?',
   },
   {
     date: '2021-04-05T00:00:00.000Z',
@@ -197,8 +187,7 @@ const messages = [
   {
     date: '2021-04-26T00:00:00.000Z',
     image: 'erstermai.jpg',
-    text:
-      'Der erste Mai steht bevor und es ist ein Samstag… Kein langes Wochenende :( Machen wir trotzdem was cooles?',
+    text: 'Der erste Mai steht bevor und es ist ein Samstag… Kein langes Wochenende :( Machen wir trotzdem was cooles?',
   },
   {
     date: '2021-05-03T00:00:00.000Z',
@@ -218,14 +207,12 @@ const messages = [
   {
     date: '2021-05-24T00:00:00.000Z',
     image: 'homeoffice.jpg',
-    text:
-      'Der Blick eines verschreckten Entwicklers, wenn man ihn in seinem natürlichen Habitat aufsucht.',
+    text: 'Der Blick eines verschreckten Entwicklers, wenn man ihn in seinem natürlichen Habitat aufsucht.',
   },
   {
     date: '2021-05-31T00:00:00.000Z',
     image: 'geschenk.jpg',
-    text:
-      'Danke, dass Du immer die Geschenkideen hast und Dir immer die Mühe machst <3...',
+    text: 'Danke, dass Du immer die Geschenkideen hast und Dir immer die Mühe machst <3...',
   },
   {
     date: '2021-06-07T00:00:00.000Z',
@@ -240,8 +227,7 @@ const messages = [
   {
     date: '2021-06-21T00:00:00.000Z',
     image: 'coolkids.jpg',
-    text:
-      'Cool Kids On The Block! Haben wir unser Versprechen eingehalten und Max und Pim mal wieder besucht?',
+    text: 'Cool Kids On The Block! Haben wir unser Versprechen eingehalten und Max und Pim mal wieder besucht?',
   },
   {
     date: '2021-06-28T00:00:00.000Z',
@@ -279,8 +265,7 @@ const messages = [
   {
     date: '2021-08-09T00:00:00.000Z',
     image: 'baptiste.jpg',
-    text:
-      'Bald ist es ein Jahr schon her, dass wir Baptiste in Ulm besucht haben!',
+    text: 'Bald ist es ein Jahr schon her, dass wir Baptiste in Ulm besucht haben!',
   },
   {
     date: '2021-08-16T00:00:00.000Z',

@@ -1,15 +1,12 @@
-// Local Variables
-$blue: #272158;
-
 .button {
   display: inline-block;
 
   border: 2px solid $blue;
-  border-radius: 1.5rem;
-  padding: rem-calc(6) rem-calc(30);
+  border-radius: 2rem;
+  padding: 0.75rem 1.875rem;
   outline: 0;
 
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -19,17 +16,18 @@ $blue: #272158;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
     transform 0.2s ease-in-out;
 
-  background-color: $blue;
-  color: $white;
+  background-color: $white;
+  color: $blue;
 
   // STATES
+  &:focus,
   &:hover {
-    background-color: transparent;
-    color: $blue;
+    background-color: $blue;
+    color: $white;
 
     @media (hover: none) {
-      color: $white;
-      background-color: $blue;
+      color: $blue;
+      background-color: $white;
     }
   }
 }

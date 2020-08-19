@@ -19,6 +19,7 @@ input.addEventListener('keyup', (event) => {
 
 input.addEventListener('focus', () => {
   inputWrap.classList.add('is-filled');
+  inputWrap.classList.remove('has-error');
 });
 
 input.addEventListener('blur', () => {
@@ -42,5 +43,6 @@ function onSuccess() {
 
 function onError() {
   localStorage.removeItem('logged-in');
+  inputWrap.classList.add('has-error');
   login.classList.remove('is-inactive');
 }
