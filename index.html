@@ -13,28 +13,38 @@
     <title>Zwei Jahre</title>
   </head>
   <body>
-    <h1>This is a test</h1>
-
     <section class="login is-hidden" data-login>
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
           <div class="cell small-12">
-            <input
-              class="error"
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Super geheimes Passwort"
-              data-pw
-            />
-            <button class="button float-right" data-login-button>
-              Leggo
-            </button>
+            <div class="grid-x">
+              <div class="cell small-9">
+                <input
+                  class="error"
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Super geheimes Passwort"
+                  data-pw
+                />
+              </div>
+              <div class="cell small-3">
+                <button class="button" data-login-button>
+                  Leggo
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section>
+      <img src="assets/images/placeholder.png" alt="#" data-image />
+      <p data-text></p>
+    </section>
+
+    <!-- JS FOOTER -->
     <script src="data.js"></script>
     <script src="login.js"></script>
     <script src="scheduler.js"></script>
