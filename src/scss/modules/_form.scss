@@ -1,0 +1,136 @@
+// Local Variables
+$placeholder-pseudo-classes: (
+  ':-ms-input-placeholder',
+  '::placeholder',
+  '::-webkit-input-placeholder',
+  '::-moz-placeholder',
+  ':-moz-placeholder'
+);
+
+$types: text password date datetime datetime-local month week email number
+  search tel time url color;
+
+@include createInputTypeList($types, textarea) {
+  @each $item in $placeholder-pseudo-classes {
+    &#{$item} {
+      color: transparent;
+    }
+  }
+}
+
+// Custom Styles
+.form {
+  &__text-input {
+    position: relative;
+
+    padding-top: 1rem; // reserve space for label
+    margin-bottom: 2rem; // reserve space for error-message
+
+    // Borders
+    &:before,
+    &:after {
+      content: '';
+
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+
+      height: 2px;
+
+      transition: width 0.2s ease-in-out;
+    }
+
+    &:before {
+      width: 100%;
+
+      background-color: $grey;
+    }
+
+    &:after {
+      width: 0;
+
+      background-color: $black;
+    }
+
+    // STATES
+    &.is-filled,
+    &.is-focused {
+      &:after {
+        width: 100%;
+      }
+
+      label {
+        top: 0;
+
+        font-size: 14px;
+      }
+    }
+
+    &.has-error {
+      &:before,
+      &:after {
+        background-color: $red;
+      }
+    }
+
+    input {
+      display: block;
+      width: 100%;
+
+      border: 0;
+      border-radius: 0;
+      -webkit-appearance: none;
+      outline: 0;
+      box-shadow: none;
+
+      padding: 0;
+      margin-bottom: 0;
+
+      color: $black;
+
+      font-size: 14px;
+
+      transition: color 0.2s ease, border 0.2s ease;
+
+      &:focus,
+      &:active {
+        border: 0;
+        box-shadow: none;
+      }
+    }
+
+    label {
+      display: block;
+
+      position: absolute;
+      top: 1.5rem;
+      left: 0;
+
+      font-size: 14px;
+      color: $grey;
+
+      pointer-events: none;
+
+      transition: top 0.2s ease, font-size 0.2s ease, line-height 0.2s ease;
+    }
+  }
+
+  // <svg> red icon
+  &__error-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0.5rem;
+
+    background-color: $white;
+  }
+
+  // <span> red text, no states. Appearance gets handled by the template
+  &__error-text {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    color: $red;
+  }
+}

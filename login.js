@@ -1,6 +1,7 @@
 const login = document.querySelector('[data-login]');
 const loginButton = document.querySelector('[data-login-button]');
 const input = document.querySelector('[data-pw]');
+const inputWrap = document.querySelector('[data-input-wrap]');
 const password = 'food';
 
 (() => {
@@ -9,11 +10,23 @@ const password = 'food';
   }
 
   localStorage.removeItem('logged-in');
-  login.classList.remove('is-hidden');
+  login.classList.remove('is-inactive');
 })();
 
-input.addEventListener('keyup', ({ key }) => {
-  key === 'Enter' && checkPassword();
+input.addEventListener('keyup', (event) => {
+  event.key === 'Enter' && checkPassword();
+});
+
+input.addEventListener('focus', () => {
+  inputWrap.classList.add('is-filled');
+});
+
+input.addEventListener('blur', () => {
+  if (input.value !== '') {
+    inputWrap.classList.add('is-filled');
+  } else {
+    inputWrap.classList.remove('is-filled');
+  }
 });
 
 loginButton.addEventListener('click', checkPassword);
@@ -24,10 +37,10 @@ function checkPassword() {
 
 function onSuccess() {
   localStorage.setItem('logged-in', password);
-  login.classList.add('is-hidden');
+  login.classList.add('is-inactive');
 }
 
 function onError() {
   localStorage.removeItem('logged-in');
-  login.classList.remove('is-hidden');
+  login.classList.remove('is-inactive');
 }

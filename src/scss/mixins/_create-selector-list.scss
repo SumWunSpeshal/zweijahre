@@ -1,0 +1,24 @@
+// @argument $selectors: array/list of CSS selectors to generate a selector list from
+@mixin createSelectorList($selectors) {
+  $list: '';
+  @each $selector in $selectors {
+    $list: $list + $selector + ',';
+  }
+  #{$list} {
+    @content;
+  }
+}
+
+// @argument $types: array/list of input types to generate a selector list from
+@mixin createInputTypeList($types, $additionalSelectors...) {
+  $list: '';
+  @each $type in $types {
+    $list: $list + '[type="' + $type + '"],';
+  }
+
+  $list: $list + $additionalSelectors;
+
+  #{$list} {
+    @content;
+  }
+}

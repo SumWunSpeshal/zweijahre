@@ -1,5 +1,198 @@
+/* libre-baskerville-regular - latin */
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/libre-baskerville-v7-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Libre Baskerville"), local("LibreBaskerville-Regular"), url("assets/fonts/libre-baskerville-v7-latin-regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/libre-baskerville-v7-latin-regular.woff2") format("woff2"), url("assets/fonts/libre-baskerville-v7-latin-regular.woff") format("woff"), url("assets/fonts/libre-baskerville-v7-latin-regular.ttf") format("truetype"), url("assets/fonts/libre-baskerville-v7-latin-regular.svg#LibreBaskerville") format("svg");
+  /* Legacy iOS */
+}
+/* libre-baskerville-700 - latin */
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/libre-baskerville-v7-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Libre Baskerville Bold"), local("LibreBaskerville-Bold"), url("assets/fonts/libre-baskerville-v7-latin-700.eot?#iefix") format("embedded-opentype"), url("assets/fonts/libre-baskerville-v7-latin-700.woff2") format("woff2"), url("assets/fonts/libre-baskerville-v7-latin-700.woff") format("woff"), url("assets/fonts/libre-baskerville-v7-latin-700.ttf") format("truetype"), url("assets/fonts/libre-baskerville-v7-latin-700.svg#LibreBaskerville") format("svg");
+  /* Legacy iOS */
+}
+body {
+  font-family: "Libre Baskerville", serif;
+}
+
 .width-100 {
   width: 100%;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.page {
+  padding-top: 1rem;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid #272158;
+  border-radius: 1.5rem;
+  padding: rem-calc(6) rem-calc(30);
+  outline: 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  background-color: #272158;
+  color: #fff;
+}
+.button:hover {
+  background-color: transparent;
+  color: #272158;
+}
+@media (hover: none) {
+  .button:hover {
+    color: #fff;
+    background-color: #272158;
+  }
+}
+
+[type=text]:-ms-input-placeholder, [type=password]:-ms-input-placeholder, [type=date]:-ms-input-placeholder, [type=datetime]:-ms-input-placeholder, [type=datetime-local]:-ms-input-placeholder, [type=month]:-ms-input-placeholder, [type=week]:-ms-input-placeholder, [type=email]:-ms-input-placeholder, [type=number]:-ms-input-placeholder, [type=search]:-ms-input-placeholder, [type=tel]:-ms-input-placeholder, [type=time]:-ms-input-placeholder, [type=url]:-ms-input-placeholder, [type=color]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: transparent;
+}
+[type=text]::placeholder, [type=password]::placeholder, [type=date]::placeholder, [type=datetime]::placeholder, [type=datetime-local]::placeholder, [type=month]::placeholder, [type=week]::placeholder, [type=email]::placeholder, [type=number]::placeholder, [type=search]::placeholder, [type=tel]::placeholder, [type=time]::placeholder, [type=url]::placeholder, [type=color]::placeholder, textarea::placeholder {
+  color: transparent;
+}
+[type=text]::-webkit-input-placeholder, [type=password]::-webkit-input-placeholder, [type=date]::-webkit-input-placeholder, [type=datetime]::-webkit-input-placeholder, [type=datetime-local]::-webkit-input-placeholder, [type=month]::-webkit-input-placeholder, [type=week]::-webkit-input-placeholder, [type=email]::-webkit-input-placeholder, [type=number]::-webkit-input-placeholder, [type=search]::-webkit-input-placeholder, [type=tel]::-webkit-input-placeholder, [type=time]::-webkit-input-placeholder, [type=url]::-webkit-input-placeholder, [type=color]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+[type=text]::-moz-placeholder, [type=password]::-moz-placeholder, [type=date]::-moz-placeholder, [type=datetime]::-moz-placeholder, [type=datetime-local]::-moz-placeholder, [type=month]::-moz-placeholder, [type=week]::-moz-placeholder, [type=email]::-moz-placeholder, [type=number]::-moz-placeholder, [type=search]::-moz-placeholder, [type=tel]::-moz-placeholder, [type=time]::-moz-placeholder, [type=url]::-moz-placeholder, [type=color]::-moz-placeholder, textarea::-moz-placeholder {
+  color: transparent;
+}
+[type=text]:-moz-placeholder, [type=password]:-moz-placeholder, [type=date]:-moz-placeholder, [type=datetime]:-moz-placeholder, [type=datetime-local]:-moz-placeholder, [type=month]:-moz-placeholder, [type=week]:-moz-placeholder, [type=email]:-moz-placeholder, [type=number]:-moz-placeholder, [type=search]:-moz-placeholder, [type=tel]:-moz-placeholder, [type=time]:-moz-placeholder, [type=url]:-moz-placeholder, [type=color]:-moz-placeholder, textarea:-moz-placeholder {
+  color: transparent;
+}
+
+.form__text-input {
+  position: relative;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+.form__text-input:before, .form__text-input:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  height: 2px;
+  transition: width 0.2s ease-in-out;
+}
+.form__text-input:before {
+  width: 100%;
+  background-color: #dadce0;
+}
+.form__text-input:after {
+  width: 0;
+  background-color: #000;
+}
+.form__text-input.is-filled:after, .form__text-input.is-focused:after {
+  width: 100%;
+}
+.form__text-input.is-filled label, .form__text-input.is-focused label {
+  top: 0;
+  font-size: 14px;
+}
+.form__text-input.has-error:before, .form__text-input.has-error:after {
+  background-color: #f00;
+}
+.form__text-input input {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+  outline: 0;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 0;
+  color: #000;
+  font-size: 14px;
+  transition: color 0.2s ease, border 0.2s ease;
+}
+.form__text-input input:focus, .form__text-input input:active {
+  border: 0;
+  box-shadow: none;
+}
+.form__text-input label {
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  font-size: 14px;
+  color: #dadce0;
+  pointer-events: none;
+  transition: top 0.2s ease, font-size 0.2s ease, line-height 0.2s ease;
+}
+.form__error-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0.5rem;
+  background-color: #fff;
+}
+.form__error-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: #f00;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+.login.is-inactive {
+  transform: translateY(-100%);
+}
+
+.box {
+  background: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.72);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+.box__image-wrap {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%;
+}
+.box__image-wrap img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  object-fit: cover;
+}
+.box__text {
+  text-align: center;
+  padding: 1rem;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */
