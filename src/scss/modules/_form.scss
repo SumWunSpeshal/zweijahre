@@ -60,7 +60,7 @@ $types: text password date datetime datetime-local month week email number searc
       }
 
       label {
-        top: 0;
+        top: -0.25rem;
 
         font-size: 12px;
       }
@@ -87,6 +87,7 @@ $types: text password date datetime datetime-local month week email number searc
       outline: 0;
       box-shadow: none;
 
+      height: auto;
       padding: 0;
       margin-bottom: 0;
 
@@ -107,10 +108,11 @@ $types: text password date datetime datetime-local month week email number searc
       display: block;
 
       position: absolute;
-      top: 1.75rem;
+      top: 0.875rem;
       left: 0;
 
       font-size: 14px;
+      line-height: 1.5;
       color: $dark-grey;
 
       pointer-events: none;
