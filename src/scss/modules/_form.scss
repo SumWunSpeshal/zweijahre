@@ -7,8 +7,7 @@ $placeholder-pseudo-classes: (
   ':-moz-placeholder'
 );
 
-$types: text password date datetime datetime-local month week email number
-  search tel time url color;
+$types: text password date datetime datetime-local month week email number search tel time url color;
 
 @include createInputTypeList($types, textarea) {
   @each $item in $placeholder-pseudo-classes {
@@ -36,7 +35,7 @@ $types: text password date datetime datetime-local month week email number
       right: 50%;
       transform: translateX(50%);
 
-      height: 2px;
+      height: 1px;
 
       transition: width 0.2s ease-in-out;
     }
@@ -112,12 +111,11 @@ $types: text password date datetime datetime-local month week email number
       left: 0;
 
       font-size: 16px;
-      color: $grey;
+      color: $dark-grey;
 
       pointer-events: none;
 
-      transition: top 0.2s ease, font-size 0.2s ease, line-height 0.2s ease,
-        color 0.2s ease;
+      transition: top 0.2s ease, font-size 0.2s ease, line-height 0.2s ease, color 0.2s ease;
     }
   }
 

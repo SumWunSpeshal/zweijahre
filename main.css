@@ -43,6 +43,8 @@ h4,
 h5,
 h6 {
   font-family: "Libre Baskerville", serif;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
 p {
@@ -79,27 +81,26 @@ p {
 
 .button {
   display: inline-block;
-  border: 2px solid #272158;
-  border-radius: 2rem;
-  padding: 0.75rem 1.875rem;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
   outline: 0;
   font-size: 18px;
-  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
-  background-color: #fff;
-  color: #272158;
+  background-color: #dadce0;
+  color: #555;
 }
 .button:focus, .button:hover {
-  background-color: #272158;
+  background-color: #555;
   color: #fff;
 }
 @media (hover: none) {
   .button:focus, .button:hover {
-    color: #272158;
+    color: #555;
     background-color: #fff;
   }
 }
@@ -131,7 +132,7 @@ p {
   bottom: 0;
   right: 50%;
   transform: translateX(50%);
-  height: 2px;
+  height: 1px;
   transition: width 0.2s ease-in-out;
 }
 .form__text-input:before {
@@ -179,7 +180,7 @@ p {
   top: 1.5rem;
   left: 0;
   font-size: 16px;
-  color: #dadce0;
+  color: #555;
   pointer-events: none;
   transition: top 0.2s ease, font-size 0.2s ease, line-height 0.2s ease, color 0.2s ease;
 }
@@ -211,6 +212,11 @@ p {
 }
 .login.is-inactive {
   transform: translateY(-100%);
+}
+.login__box {
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.12);
 }
 
 .box {
