@@ -148,7 +148,7 @@ p {
 }
 .form__text-input.is-filled label, .form__text-input.is-focused label {
   top: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 .form__text-input.has-error:before, .form__text-input.has-error:after {
   background-color: #f00;
@@ -177,9 +177,9 @@ p {
 .form__text-input label {
   display: block;
   position: absolute;
-  top: 1.5rem;
+  top: 1.75rem;
   left: 0;
-  font-size: 16px;
+  font-size: 14px;
   color: #555;
   pointer-events: none;
   transition: top 0.2s ease, font-size 0.2s ease, line-height 0.2s ease, color 0.2s ease;
