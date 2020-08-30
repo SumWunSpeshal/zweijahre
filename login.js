@@ -9,28 +9,35 @@ const password = 'food';
     return;
   }
 
+  if (!input) {
+    return;
+  }
+
   localStorage.removeItem('logged-in');
   login.classList.remove('is-inactive');
+  addEvents();
 })();
 
-input.addEventListener('keyup', (event) => {
-  event.key === 'Enter' && checkPassword();
-});
+function addEvents() {
+  input.addEventListener('keyup', event => {
+    event.key === 'Enter' && checkPassword();
+  });
 
-input.addEventListener('focus', () => {
-  inputWrap.classList.add('is-filled');
-  inputWrap.classList.remove('has-error');
-});
-
-input.addEventListener('blur', () => {
-  if (input.value !== '') {
+  input.addEventListener('focus', () => {
     inputWrap.classList.add('is-filled');
-  } else {
-    inputWrap.classList.remove('is-filled');
-  }
-});
+    inputWrap.classList.remove('has-error');
+  });
 
-loginButton.addEventListener('click', checkPassword);
+  input.addEventListener('blur', () => {
+    if (input.value !== '') {
+      inputWrap.classList.add('is-filled');
+    } else {
+      inputWrap.classList.remove('is-filled');
+    }
+  });
+
+  loginButton.addEventListener('click', checkPassword);
+}
 
 function checkPassword() {
   input.value === password ? onSuccess() : onError();
