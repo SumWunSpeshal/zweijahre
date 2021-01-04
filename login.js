@@ -2,10 +2,10 @@ const login = document.querySelector('[data-login]');
 const loginButton = document.querySelector('[data-login-button]');
 const input = document.querySelector('[data-pw]');
 const inputWrap = document.querySelector('[data-input-wrap]');
-const password = 'food';
+const PASSWORD = 'food';
 
 (() => {
-  if (localStorage.getItem('logged-in') === password) {
+  if (localStorage.getItem('logged-in') === PASSWORD) {
     return;
   }
 
@@ -40,11 +40,11 @@ function addEvents() {
 }
 
 function checkPassword() {
-  input.value === password ? onSuccess() : onError();
+  input.value === PASSWORD ? onSuccess() : onError();
 }
 
 function onSuccess() {
-  localStorage.setItem('logged-in', password);
+  localStorage.setItem('logged-in', PASSWORD);
   login.classList.add('is-inactive');
 }
 
@@ -52,4 +52,4 @@ function onError() {
   localStorage.removeItem('logged-in');
   inputWrap.classList.add('has-error');
   login.classList.remove('is-inactive');
-}
+} 
